@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./index --exec babel-node --ignore ./public",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "webpack:watch": "webpack -w"
   },
   "keywords": [
     "webpack"

@@ -1,8 +1,10 @@
 import express from 'express';
-import countryHandler from '../handlers/countryHandler';
+import getCountryHandler from '../handlers/countryHandler';
+import getHeadLineHandler from '../handlers/headLineHandler';
 
 const country = express.Router();
-country.use(express.static('public'));
-country.get('/:countrySigle/:pageSize?/:page?', countryHandler);
+country.get('/country/:countrySigle/:pageSize?/:page?', getCountryHandler);
+country.get('/headline/:singleParam?/:pageSize?/:page?', getHeadLineHandler);
 
 export default country;
+

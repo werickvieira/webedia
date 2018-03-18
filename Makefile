@@ -1,6 +1,6 @@
 start:
 	@echo Iniciando a aplicação
-	npm run webpack && npm start
+	npm run webpack && npm start 
 
 install:
 	npm install

@@ -1,13 +1,13 @@
 import path from 'path';
-import webpack from 'webpack';
+// import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-const env = process.env.NODE_ENV || 'development';
+// const env = process.env.NODE_ENV || 'development';
 
 const config = {
   entry: './app/src/js/app.js',
   output: {
-    filename: 'bundle.js?[hash]',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
     publicPath: '',
   },
@@ -31,7 +31,7 @@ const config = {
   },
 
   plugins: [
-    new ExtractTextPlugin('style.css?[hash]'),
+    new ExtractTextPlugin('style.css'),
   ],
 };
 
