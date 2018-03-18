@@ -1,10 +1,12 @@
 import express from 'express';
-import index from './pages/index';
-import state from './pages/state';
+import country from './country';
 
 const routes = express.Router();
 
-routes.use('/', index);
-routes.use('/state', state);
+routes.get('/', (req, res) => {
+  res.render('index');
+});
+
+routes.use('/country', country);
 
 export default routes;
