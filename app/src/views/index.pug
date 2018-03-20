@@ -2,8 +2,12 @@ doctype html
 html(lang,"pt-br")
   title Desafio Webedia
   head
-    include includes/header.pug
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    link(rel="stylesheet", type="text/css", href="style.css")
   body
-    include componentes/main.pug
+    include includes/header.pug
+    include includes/main.pug
     include includes/footer.pug
 

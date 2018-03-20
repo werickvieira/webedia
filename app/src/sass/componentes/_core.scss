@@ -1,3 +1,33 @@
-body{
-  background-color: #000;
+header{
+  min-height: 100px;
+  border: 2px solid green;
+  .w-header{
+    display: flex;
+    // flex-flow: row wrap;
+    justify-content: flex-end;
+    border: 2px solid red;
+    .w-header__item{
+      flex: 0 0 30%;
+      &.w-logo{
+        border: 2px solid black;
+        flex-basis: 40%;
+        text-align: center;
+        img{
+          display: inline-block;
+        }
+      }
+      &.w-search{
+        border: 2px solid black;
+      }     
+    }
+  }
+}
+nav{
+  min-height: 60px;
+  border: 2px solid red;
+  ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
 }
